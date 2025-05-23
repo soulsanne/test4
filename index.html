@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Halaman Countdown -->
+  <div id="countdownPage">
+    <h1>Countdown Ulang Tahun</h1>
+    <div id="countdown"></div>
+    <input type="text" id="pinInput" placeholder="Masukkan Pin " />
+    <button onclick="checkPin()">Masukkan Pin</button>
+  </div>
+
+  <!-- Halaman Ucapan -->
+  <div id="greetingPage" class="hidden">
+    <div class="background">
+      <div class="greetingMessage">
+        <h2>Selamat bertambah usia, bayikk gede kesayangan aku! 👶🏻🎂🩷🎉</h2>
+        <p>Semoga kamu sentiasa menjadi insan yang pemurah, rajin beribadat, dan diberkahi umur sepanjang hidupmu. 💞✨</p>
+        <p>Semoga segala kesulitanmu dilapangkan, rezekimu dilimpahkan, dan perjalanan hidupmu dipermudahkan hingga ke akhir hayat. 💘🌈</p>
+        <p>Semoga kamu—dan kita—direzekikan jodoh yang baik, bertanggungjawab dan bertolak ansur. Yang mampu menjaga dan memimpin rumahtangga ke jalan yang benar dan penuh keberkatan. 💝🏡</p>
+        <p>Semoga setiap doa, impian dan harapan yang kamu impikan dan dambakan… dimakbulkan, satu demi satu. 🙏🏻🌟</p>
+        <button id="confettiButton">🎉 Confetti!</button>
+        <div id="emojiContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lagu -->
+  <audio id="birthdaySong" src="audio/birthday.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
